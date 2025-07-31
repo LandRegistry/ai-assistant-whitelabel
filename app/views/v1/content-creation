@@ -1,0 +1,40 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="/v1/index" class="govuk-back-link">Back</a>
+
+  <h1 class="govuk-heading-xl">
+    Creating content for our white label designs
+  </h1>
+  <p class="govuk-body-l">
+    We needed to create content to replace the prototype content for the white label designs. Recently, HMLR's UCD community took part in a 'design a service in a day' workshop. The aim for this service was to 'register Superheroes'. As a whole, the community took to the challenge well and was able to apply knowledge and skills to this context. Therefore, we decided to use the same context, hopeful this will still illustrate the design decisions made.
+  </p>
+
+  <p class="govuk-body">
+    In order to replicate a user's interaction with the tool, we began by asking ChatGPT for article text for "How to submit Form A". This question set enough context to then add further requests to ChatGPT. We were impressed by the quality of the responses and in every case, the tool provided us with responses that met our requests.</p>
+
+<p class="govuk-body">By using ChatGPT, we were able to create these white label designs much quicker. It also provided us with content that was like the 'real content' but abstract enough to demonstrate the white label objective.
+
+<p class"govuk-body">The <a href="https://chatgpt.com/share/6888d02d-3dcc-8006-a231-155c0300a0d4">full chat</a> can be accessed.</p>
+
+<img style='border:1px solid #000000' src="/public/images/A-screenshot-of-the-chat-with-ChatGPT to-get-the-content.png" alt="A screenshot of the chat with ChatGPT to get the content" title="A screenshot of the chat with ChatGPT to get the content" width="1024"></img>
+
+
+  {# <img style='border:1px solid #000000' src="/public/images/screenshot of interaction with ChatGPT to get the content for these designs.png" alt="screenshot of interaction with ChatGPT to get the content for these design" title="screenshot of interaction with ChatGPT to get the content for these designs" width="1024"></img>
+
+<div class="govuk-!-padding-bottom-6"></div> #}
+
+{# <p class="govuk-body">"Give me place holder text to represent a guidance article for how to submit 'Form A'. form A is used for Superheroes to register their occupation to the government"</p>
+<p class="govuk-body">The response was great, we were provided with a full article which we copied and pasted into our designs</p>
+<p class="govuk-body">We also needed article headings for the 'related articles.</p>
+<p class="govuk-body">"Give me names of 10 related articles along the same theme"</p> #}
+
+
+</p>
+
+{% endblock %}
