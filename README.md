@@ -4,5 +4,5 @@ We've removed the real content and replaced it with fictional information - so t
 
 To run the prototype:
 - node 18 is needed
-- run 'npm init to install node modules
-- use 'npm run dev
+- run `npm init` to install node modules
+- use `npm run dev`
