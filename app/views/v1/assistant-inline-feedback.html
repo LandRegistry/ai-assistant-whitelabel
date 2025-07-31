@@ -1,0 +1,64 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Casework guidance AI assistant- inline feedback
+  </h1>
+  <p class="govuk-body-l">
+  Following the response, we have introduced inline feedback to allow the user to feed back on the helpfulness of the response.
+</p>
+
+<img style='border:1px solid #000000' src="/public/images/assistant-first-query-whitelabel.png" alt="Assistant first query white label" title="Assistant first query white label design" width="1024"></img>
+<div class="govuk-!-padding-bottom-6"></div>
+  <p class="govuk-body">Initially, the team were keen to introduce a 'thumbs up'/'thumbs down' mechanism to gain feedback on the response. We were aware of the accessibility limitations that this would introduce and therefore considered current feedback approaches, specifically on the GOV.UK chat. Following this, we explored 'When you have finished, tell us if the answer was useful'. However, this approach did not allow feedback on a 'repsonse by response' basis, rather the conversation as a whole, which was too broad.</p>
+  <p class="govuk-body">Further conversations confirmed the objective for the team was to recieve definitive feedback to the helpfulness of the response, which could then indicate further explorations into inaccurately generated responses. The 'yes'/'no' question allowed the team to be able to pinpoint inaccurate responses to improve the LLM.</p>
+
+  <img style='border:1px solid #000000' src="/public/images/assistant-feedback-hiddentext.png" alt="Assistant feedback mechanism- hidden text white label" title="Assistant feedback mechanism- hidden text white label design" width="1024"></img>
+<div class="govuk-!-padding-bottom-6"></div>
+
+  <p class="govuk-body">We provided the team with visually hidden text for the 'yes'/'no' links to ensure they could be understood by assistive technology.</p>
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-half">
+        <a class="assistant-first-query-helpful-whitelabel-img" href="assistant-feedback.html">
+  <img style='border:1px solid #000000' src="/public/images/assistant-first-query-helpful-whitelabel.png" alt="Assistant first query with helpful response white label" title="Assistant first query with helpful response white label design" width="527"></img>
+        </a>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+        <a class="assistant-first-query-unhelpful-whitelabel-img" href="assistant-feedback.html">
+  <img style='border:1px solid #000000' src="/public/images/assistant-first-query-unhelpful-whitelabel.png" alt="Assistant first query with unhelpful response white label" title="Assistant first query with unhelpful response white label design" width="527"></img>
+        </a>
+  </div>
+</div>
+
+<div class="govuk-!-padding-bottom-6"></div>
+<p class="govuk-body">Upon selecting 'yes'/'no' the inline text changes to ask a follow up question asking if the user would like to expand on why the response was helpful/unhelpful.</p>
+
+  <p class="govuk-body">
+  We considered which pair of words would be appropriate for a positive/negative response. This included 'useful'/'not useful', 'correct'/'incorrent', 'helpful'/'unhelpful', 'accurate'/'inaccurate', 'like'/'dislike'. We don't know which word pair works best for users as we were unable to test these but we thought 'helpful'/'unhelpful' were best as it allows users to consider their own context whereas 'correct'/'incorrect' is too absolute. For example, a response could be factually correct but does not specifically answer the users response or vice versa.</p>
+<div class="govuk-!-padding-bottom-6"></div>
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <a class="assistant-first-query-helpful-whitelabel-img" href="assistant-feedback.html">
+    <img style='border:1px solid #000000' src="/public/images/assistant-helpful-feedback.png" alt="Assistant first query with helpful response white label" title="Assistant first query with helpful response white label design" width="527"></img>
+          </a>
+        </div>
+<div class="govuk-grid-column-one-half">
+          <a class="assistant-first-query-unhelpful-whitelabel-img" href="assistant-feedback.html">
+    <img style='border:1px solid #000000' src="/public/images/assistant-unhelpful-feedback.png" alt="Assistant first query with unhelpful response white label" title="Assistant first query with unhelpful response white label design" width="527"></img>
+          </a>
+        </div>
+</div>
+  <div class="govuk-!-padding-bottom-6"></div>
+
+  <p class="govuk-body">
+  By selecting the links following the repsonses, users are taken to one of these pages where they can provide details about why a response was helpful or unhelpful. This is optional, users do not need to add this additional detail for us to record the initial helpful/unhelpful response. The question is tailored depending on if a user answered 'yes' or 'no'.</p>
+  </p>
+{% endblock %}

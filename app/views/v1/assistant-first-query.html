@@ -1,0 +1,28 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Casework guidance AI assistant- query
+  </h1>
+  <p class="govuk-body-l">
+    Upon entering a query into the assistant, the assistant generates a response using source information from the articles in the existing caseworker guidance system. It then considers the information found and generates a response, with the source information extracted from the articles available for users to check the AI generated response.
+  </p>
+
+<a class="assistant-first-query-whitelabel-img" href="assistant-second-query.html">
+
+  <img style='border:1px solid #000000' src="/public/images/assistant-first-query-whitelabel.png" alt="Assistant first query white label" title="Assistant first query white label design" width="1024"></img>
+
+</a>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<p class="govuk-body">
+The conversation is left aligned, as the assistant will only be used on desktop. This also felt more appropriate to follow the users likely reading habits on desktop (from top to bottom). We made the assumption that as the responses are likely to be large blocks of text, they would be easier to read.</p>
+<p class="govuk-body">Also, we have chosen to not name the questions and responses (indicating 'who was speaking') as it felt that this added an informality to the conversation, which contradicts the subject matter and use cases.</p>
+<p class="govuk-body">The content on the right hand panel remains consistent.</p>
+{% endblock %}

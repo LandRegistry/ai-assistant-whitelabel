@@ -1,0 +1,28 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Caseworker guidance article page
+  </h1>
+  <p class="govuk-body-l">
+    Following a keyword search on the homepage, users are taken to a search results page where they can then select the appropriate article from the shortlisted view.
+  </p>
+
+<a class="Article_whitelabel-img" href="assistant-homepage.html">
+
+  <img style='border:1px solid #000000' src="/public/images/Article_whitelabel.png" alt="Article white label design" title="Article white label design" width="1024"></img>
+
+</a>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<p class="govuk-body">
+We believe that if users are unable to easily find the information using the traditional, keyword search, they may consider utilising the tool. Therefore, users can launch the assistant from this article page.</p>
+<p class="govuk-body"> On this page, we have added the minimised widget to this page. The widget has been minimised by removing the example text. The visual language and proactive, encouraging tone remains.</p>
+<p class="govuk-body">A future consideration could be that if the assistant is launched from this page, the context of the article could be passed to the model, initiating the search.</p>
+{% endblock %}

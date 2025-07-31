@@ -1,0 +1,38 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Index
+    </h1>
+    <p class="govuk-body">We have replaced the content of our designs with a general subject matter. This subject matter is 'Superhero applications', however we hope this will still illustrate the design decisions made.</p>
+
+    <p class="govuk-body">Pages:</p>
+    <ul class="govuk-list govuk-list--bullet">
+		  <li><a href="/v1/homepage.html">Existing guidance home page</a>- this page shows how we allowed for navigation to the tool from the existing caseworker guidance
+		  </li>
+		  <li><a href="/v1/article.html">Article page</a>- users navigate to the article page following selection from the search results
+		  </li>
+      <li><a href="/v1/assistant-homepage.html">Assistant home page</a>- the home page of our assistant
+      </li>
+      <li><a href="/v1/assistant-first-query.html">Assistant first query</a>- how we display the question/response interaction of the assistant
+      </li>
+      <li><a href="/v1/assistant-second-query.html">Assistant second query</a>- how to display a conversation longer than one question/response
+      </li>
+      <li><a href="/v1/assistant-second-query.html">Assistant second query</a>- how to display a conversation longer than one question/response
+      </li>
+      <li><a href="/v1/assistant-inline-feedback.html">Assistant- inline feedback</a>- how we are getting feedback from users about the responses
+      </li>
+      <li><a href="/v1/assistant-feedback.html">Assistant- general feedback</a>- how we are getting feedback from users about the assistant
+      </li>
+		</ul>
+    <p class="govuk-body">Internal HMLR designers may access additional documentation on <a href="https://github.com/LandRegistry/design-library/discussions/2">GitHub discussions</a>.</p>
+  </div>
+</div>
+
+{% endblock %}

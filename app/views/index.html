@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Casework assistant- white label - prototype
+    </h1>
+
+    <p class="govuk-body-l">This white label prototype is a generalised version of an AI assistant for caseworkers. This assistant helps users make decisions about applications.</p>
+    <p class="govuk-body">At our organisation, caseworkers have a large library of articles to inform decisions. These articles have been loaded into a Large Language Model (LLM). This prototype is a white label version of the user interface to get responses from the LLM.</p>
+    <p class="govuk-body">We took inspiration and learnings from oour colleagues across government, notably:</p>
+    <ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="https://insidegovuk.blog.gov.uk/2024/11/28/how-were-designing-gov-uk-chat/">How we’re designing GOV.UK Chat</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="https://insidegovuk.blog.gov.uk/2024/11/05/gov-uk-chat-understanding-and-addressing-jailbreaking-in-our-generative-ai-experiment/">GOV.UK Chat: Understanding and addressing jailbreaking in our generative AI experiment</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="https://insidegovuk.blog.gov.uk/2024/11/05/were-running-a-private-beta-of-gov-uk-chat/">We’re running a private beta of GOV.UK Chat</a>
+  </li>
+</ul>
+
+<p class"govuk-body">Our Assistant is in private beta with staff.  To share our thinking and design decisions about AI UI, we've removed the real content and replaced it with fictional information - so the design can be seen.</p>
+
+<p class"govuk-body">You can contact us on X-Gov slack: Andy Porter (Lead Interaction Designer), Romani Davies (Interaction Designer), Kit Harding (Content Designer) and Tjingmi Chow (Senior User Researcher).</p>
+
+
+<a class="govuk-button" href="v1/">View prototype</a>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+  Casework guidance AI assistant- additional queries
+  </h1>
+  <p class="govuk-body-l">
+    Our system is able to take context from up to 4 queries when generating responses. Therefore, we had to consider how multiple related queries and responses could be displayed.
+  </p>
+
+<a class="assistant-additional-query-whitelabel-img" href="assistant-inline-feedback.html">
+
+  <img style='border:1px solid #000000' src="/public/images/assistant-second-query-whitelabel.png" alt="Assistant additional query white label" title="Assistant additional query white label design" width="1024"></img>
+
+</a>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<p class="govuk-body">
+  <p class="govuk-body">One way we distinguish between the question and response is the text widths. The users question is displayed at 1/3 width, as it is likely the response will be much longer. In addition to this, the question is on #D2E2F1, whilst the response is on govuk-colour("light-grey") #f3f2f1- these colours have been used on the GOV.UK Chat (experimental). There is a small gap between the boxes to create another visual difference between the question and response.</p>
+
+{% endblock %}

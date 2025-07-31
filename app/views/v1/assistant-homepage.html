@@ -1,0 +1,30 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Casework guidance AI assistant- homepage
+  </h1>
+  <p class="govuk-body-l">
+    The homepage of the assistant is minimal. We have tried to focus the user on a simple interaction- asking a question.
+  </p>
+
+<a class="assistant-homepage-whitelabel-img" href="assistant-first-query.html">
+
+  <img style='border:1px solid #000000' src="/public/images/assistant-homepage-whitelabel.png" alt="Assistant homepage white label design" title="Assistant homepage white label design" width="1024"></img>
+
+</a>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<p class="govuk-body">We have told users the assistant uses AI, which is important from an ethical perspective. This clause involved a lot of wider conversations, to balance the ethical responsibility of informing users of the AI usage but also that the information supplied should be checked.</p>
+<p class="govuk-body">To label the button we considered alternatives such as 'Ask', 'Search' and 'Ask a question'. As a conversational interface we were unsure of the language that is best suited for this component. For the first iteration, we have used 'Go'.</p>
+<p class="govuk-body">The LLM has been designed to allow users to have 4 question 'conversations'. This means the LLM will consider the context of up to 4 previous questions to inform the following response. Up to 4 questions was considered the optimal number of questions, that best informed the LLM without degrading the quality of responses.</p>
+<p class="govuk-body">The secondary link, 'Assist with another query', starts a new 'conversation' removing all previous context.</p>
+<p class="govuk-body">Normally, we wouldn't explain how to use a tool. However, considering this new paradigm of design, underpinned by our user research we felt there was a user need to provide guidance. Our user research found that our users didn't know how to interact with the assistant and as a result, the quality of responses were poor.</p>
+<p class="govuk-body">Therefore, we have included links to the purpose built guidance and demonstrations to help our users understand how to best ask questions. These materials have been tested and iterated following exposure to users.</p>
+{% endblock %}

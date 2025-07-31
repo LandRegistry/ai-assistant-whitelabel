@@ -1,0 +1,25 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Casework guidance AI assistant- general feedback
+  </h1>
+  <p class="govuk-body-l">
+    As with any new tool, we are keen to faciliate users submitting feedback. This feedback is also important to improve our LLM.
+  </p>
+
+<img style='border:1px solid #000000' src="/public/images/assistant-general-feedback-whitelabel.png" alt="Assistant general feedback white label" title="Assistant general feedback white label design" width="1024"></img>
+<div class="govuk-!-padding-bottom-6"></div>
+<p class="govuk-body">
+To make it easier for users to submit feedback, we provide users with a free text field, rather than asking specifc questions.
+</p>
+<p class="govuk-body">
+This is accessible through the right hand panel on the assistant's interface. Users can access this at any point during their journey. This is important as some of our users may want to feedback at a more convenient time (rather than following specific responses). We have tailored this question to be more general, to allow users to reflect on their experience using the tool as a whole. We're following the principles of the 'Tell us how to improve this service' pattern.
+</p>
+
+{% endblock %}
